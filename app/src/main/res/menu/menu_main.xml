@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/optionSignOut"
-        android:title="@string/submit"
-        android:visible="true"
-        app:showAsAction="always||withText"/>
+        android:id="@+id/submit"
+
+        app:showAsAction="ifRoom|withText"
+        android:title="Submit">
+    </item>
 
 </menu>
