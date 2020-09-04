@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.viewpager.widget.ViewPager
+
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:id="@+id/gads_view_pager"
-    android:layout_height="match_parent">
-    <com.google.android.material.tabs.TabLayout
-        style="@style/CategoryTab"
-        android:id="@+id/tab_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true">
+    </androidx.appcompat.widget.Toolbar>
+<androidx.viewpager.widget.ViewPager
+
+android:layout_width="match_parent"
+android:id="@+id/gads_view_pager"
+android:layout_height="match_parent">
+
+<com.google.android.material.tabs.TabLayout
+    style="@style/CategoryTab"
+    android:id="@+id/tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
 </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
