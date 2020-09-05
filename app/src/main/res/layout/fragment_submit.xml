@@ -52,12 +52,12 @@
             android:layout_width="@dimen/_180dp"
             android:layout_height="wrap_content"
             android:background="@color/colorWhite"
-
             android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:fontFamily="@font/quicksand_medium"
             android:hint="@string/first_name"
             android:inputType="textCapSentences"
             android:paddingTop="@dimen/_8dp"
+            android:paddingLeft="@dimen/_8dp"
             android:paddingBottom="@dimen/_8dp"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/_14sp" />
@@ -73,6 +73,7 @@
             android:inputType="textCapSentences"
             android:paddingTop="@dimen/_8dp"
             android:paddingBottom="@dimen/_8dp"
+            android:paddingLeft="@dimen/_8dp"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/_14sp" />
 
@@ -89,9 +90,9 @@
         android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:fontFamily="@font/quicksand_medium"
         android:hint="@string/email"
-
         android:paddingTop="@dimen/_8dp"
         android:paddingBottom="@dimen/_8dp"
+        android:paddingLeft="@dimen/_8dp"
         android:textColor="@color/colorBlack"
         android:textSize="@dimen/_14sp" />
     <androidx.appcompat.widget.AppCompatEditText
@@ -105,9 +106,9 @@
         android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:fontFamily="@font/quicksand_medium"
         android:hint="@string/github_link"
-
         android:paddingTop="@dimen/_8dp"
         android:paddingBottom="@dimen/_8dp"
+        android:paddingLeft="@dimen/_8dp"
         android:textColor="@color/colorBlack"
         android:textSize="@dimen/_14sp" />
     <androidx.appcompat.widget.AppCompatButton
