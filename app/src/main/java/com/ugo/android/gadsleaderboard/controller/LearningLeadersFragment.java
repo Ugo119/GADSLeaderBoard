@@ -1,8 +1,6 @@
 package com.ugo.android.gadsleaderboard.controller;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,12 +16,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.ugo.android.gadsleaderboard.R;
 import com.ugo.android.gadsleaderboard.adapter.LearningLeadersDisplayAdapter;
 import com.ugo.android.gadsleaderboard.model.learningleaders.LearningLeaders;
-import com.ugo.android.gadsleaderboard.model.learningleaders.LearningLeadersResponseModel;
 import com.ugo.android.gadsleaderboard.network.LeaderboardApiService;
 import com.ugo.android.gadsleaderboard.network.RetrofitFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -48,17 +44,7 @@ public class LearningLeadersFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(
                 new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
-//        ArrayList<LearningLeaders> learningLeadersList = new ArrayList<>();
-//        learningLeadersList.add(new LearningLeaders(R.drawable.learningleader, "Peter Obi", "22 hours read", "Nigeria"));
-//        learningLeadersList.add(new LearningLeaders(R.drawable.learningleader, "John Ngige", "22 hours read", "Nigeria"));
-//        learningLeadersList.add(new LearningLeaders(R.drawable.learningleader, "Ahmadu Ali", "22 hours read", "Nigeria"));
-//        learningLeadersList.add(new LearningLeaders(R.drawable.learningleader, "Ade Bisi", "22 hours read", "Nigeria"));
-//        learningLeadersList.add(new LearningLeaders(R.drawable.learningleader, "Sean John", "22 hours read", "UK"));
-//        learningLeadersList.add(new LearningLeaders(R.drawable.learningleader, "Stella Ngozi", "22 hours read", "China"));
-//        learningLeadersDisplayAdapter = new LearningLeadersDisplayAdapter(getActivity(), learningLeadersList);
-//
-//
-//        recyclerView.setAdapter(learningLeadersDisplayAdapter);
+
         connectAndGetApiData();
 
         return view;
@@ -67,7 +53,6 @@ public class LearningLeadersFragment extends Fragment {
         retrofit = RetrofitFactory.getRetrofit();
 
         LeaderboardApiService leaderboardApiService = retrofit.create(LeaderboardApiService.class);
-        //Call<MovieResponse> call = movieApiService.getTopRatedMovies(API_KEY);
 
         Call<List<LearningLeaders>> call = leaderboardApiService.getLearningLeaders();
 
@@ -80,11 +65,7 @@ public class LearningLeadersFragment extends Fragment {
                         final LearningLeadersDisplayAdapter adapter = new LearningLeadersDisplayAdapter(getActivity(), learningLeaders);
                         recyclerView.setAdapter(adapter);
                         adapter.notifyDataSetChanged();
-
                     }
-
-
-
             }
 
             @Override
@@ -92,17 +73,11 @@ public class LearningLeadersFragment extends Fragment {
                 if (t instanceof IOException) {
                     Toast.makeText(getContext(), "this is an actual network failure " +
                             ":( inform the user and possibly retry", Toast.LENGTH_SHORT).show();
-                    // logging probably not necessary
                 } else {
                     Toast.makeText(getContext(), "conversion issue! big problems :(",
                             Toast.LENGTH_SHORT).show();
                 }
-
             }
-
-
         });
-
-
     }
 }

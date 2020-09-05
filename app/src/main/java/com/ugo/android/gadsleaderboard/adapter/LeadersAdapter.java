@@ -20,7 +20,6 @@ public class LeadersAdapter extends FragmentStatePagerAdapter {
     public LeadersAdapter(Context context, FragmentManager fm){
         super(fm);
         mContext = context;
-
     }
 
     @NonNull

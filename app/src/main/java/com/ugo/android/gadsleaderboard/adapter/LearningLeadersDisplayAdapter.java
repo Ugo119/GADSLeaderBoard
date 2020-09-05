@@ -20,16 +20,13 @@ import java.util.List;
 
 public class LearningLeadersDisplayAdapter extends RecyclerView.Adapter<LearningLeadersDisplayAdapter.LearningViewHolder> {
 
-
     private List<LearningLeaders> learningLeadersList;
 
     public LearningLeadersDisplayAdapter(Activity context, List<LearningLeaders> learningLeadersList) {
         this.learningLeadersList = learningLeadersList;
-        //super(context, 0, learningLeaders);
     }
 
     public static class LearningViewHolder extends RecyclerView.ViewHolder {
-
         public ImageView badge;
         public TextView name;
         public TextView activity;
@@ -53,9 +50,7 @@ public class LearningLeadersDisplayAdapter extends RecyclerView.Adapter<Learning
 
         final View view = inflater.inflate(R.layout.learning_leader_layout,parent, false);
 
-
         return new LearningViewHolder(view);
-
     }
 
     @Override
