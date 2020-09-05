@@ -127,7 +127,7 @@ public class SubmitActivity extends AppCompatActivity {
         LeaderboardApiService leaderboardApiService = retrofit.create(LeaderboardApiService.class);
 
 
-        Call<SubmissionResponseModel> call = leaderboardApiService.submitProject(firstName, lastName, email, submitUrl);
+        Call<SubmissionResponseModel> call = leaderboardApiService.submitProject(email,firstName, lastName, submitUrl);
         call.enqueue(new Callback<SubmissionResponseModel>() {
             @Override
             public void onResponse(Call<SubmissionResponseModel> call, Response<SubmissionResponseModel> response) {
