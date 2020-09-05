@@ -15,11 +15,7 @@
 
         </activity>
         <activity android:name=".activity.GadsHomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.SingleFragmentActivity">
 
@@ -30,8 +26,15 @@
         <activity android:name=".activity.SubmitActivity"
             android:parentActivityName=".activity.GadsHomeActivity" >
 
-
         </activity>
+
+        <activity android:name=".activity.SplashScreenActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>.40
 
 
     </application>

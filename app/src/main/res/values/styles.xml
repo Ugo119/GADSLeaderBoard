@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorBlack</item>
         <item name="colorPrimaryDark">@color/colorBlack</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/splash</item>
     </style>
 
     <!-- Style for a tab that displays a category name -->
@@ -39,5 +40,7 @@
         <item name="android:textSize">21sp</item>
         <item name="android:textStyle">italic</item>
     </style>
+
+    
 
 </resources>
