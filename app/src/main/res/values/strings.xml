@@ -3,4 +3,13 @@
     <string name="learning_leaders_title">Learning Leaders</string>
     <string name="skill_iq_leaders_title">Skill IQ Leaders</string>
     <string name="submit">Submit</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="github_link">Project on GITHUB (link)</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="submission_successful">Submission successful</string>
+    <string name="submission_not_successful">Submission not successful</string>
+    <string name="leader_board">LEADERBOARD</string>
+
 </resources>

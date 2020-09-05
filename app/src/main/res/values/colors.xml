@@ -6,12 +6,104 @@
 
     <!--<color name="colorPrimary">#3F51B5</color>-->
 
-    <color name="orange">#FF3909</color>
+
     <color name="colorAccentDark">#00B482</color>
-    <color name="colorBlack">#555555</color>
+    <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGrayDark">#565656</color>
     <color name="colorGrayLight">#808080</color>
     <color name="colorGrey">#707070</color>
     <color name="colorGreyLight">#8A8A8A</color>
+
+    <color name="gray">#cccccc</color>
+    <color name="gray_very_light">#e5e5e5</color>
+    <color name="white">#ffffff</color>
+    <color name="shoadow">#cccccc</color>
+    <color name="grayish_white">#a4a4a4</color>
+    <color name="forgotpass_title_back">#54585a</color>
+    <color name="forgotpass_back">#212527</color>
+    <color name="forgotpass_ed_back">#1c1d1f</color>
+    <color name="forgotpass_submit">#ffae01</color>
+    <color name="searchmap_highlight">#33ffae01</color>
+    <color name="rating_inactive">#aaffbe33</color>
+    <color name="bottomnavigation">#202324</color>
+    <color name="nav_baqckground">#262626</color>
+    <color name="black">#000000</color>
+    <color name="rank_bg">#2f3233</color>
+    <color name="background_gray">#ECF3F5</color>
+
+    <color name="viewfinder_mask">#90000000</color>
+    <color name="viewfinder_laser">#0bb0f0</color>
+    <color name="viewfinder_border">#0bb0f0</color>
+
+    <color name="red">#ffff0000</color>
+    <color name="grey_text_color">#AFAFAF</color>
+    <color name="deselected_text_color">#797979</color>
+    <color name="dark_green">#2F5E3D</color>
+    <color name="light_green">#2DFB59</color>
+    <color name="light_green_1">#3bbc7e</color>
+    <color name="light_grey">#353535</color>
+    <color name="dark_grey">#222222</color>
+    <color name="dark_grey1">#575757</color>
+    <color name="off_white">#C1C1C1</color>
+    <color name="weather_light_grey">#363636</color>
+    <color name="weather_dark_grey">#2c2c2c</color>
+    <color name="divider_grey">#666666</color>
+    <color name="lighter_grey">#747474</color>
+    <color name="latest_trends_item_color">#252829</color>
+    <color name="forgot_pass_light_grey">#595E60</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_opacity">#33cccccc</color>
+
+    <color name="red_options">#B82434</color>
+    <color name="blue">#3c40c6</color>
+    <color name="blue_1">#456dec</color>
+    <color name="blue_2">#2698FA</color>
+    <color name="blue_2_pressed">#7d2698FA</color>
+    <color name="blue_3">#1d4872</color>
+    <color name="blue_4">#5590c8</color>
+    <color name="blue_5">#002F6C</color>
+    <color name="blue_6">#263568</color>
+    <color name="royal_blue">#4970ed</color>
+
+    <color name="darker_gray">#485460</color>
+    <color name="green">#05c46b</color>
+    <color name="green_">#4ef0a9</color>
+    <color name="green1">#3bbc7e</color>
+
+    <color name="orange">#ffa801</color>
+    <color name="golden">#fdb52c</color>
+    <color name="lighter_red">#ff5e57</color>
+    <color name="green_pressed">#7d4ef0a9</color>
+
+    <color name="map_orange_5">#ffff7200</color>
+    <color name="map_orange_4">#ccff7200</color>
+    <color name="map_orange_3">#aaff7200</color>
+    <color name="map_orange_2">#77ff7200</color>
+    <color name="map_orange_1">#55ff7200</color>
+
+    <color name="map_brown_5">#ff734021</color>
+    <color name="map_brown_4">#cc734021</color>
+    <color name="map_brown_3">#aa734021</color>
+    <color name="map_brown_2">#77734021</color>
+    <color name="map_brown_1">#55734021</color>
+
+    <color name="map_cyan_5">#ff08e7e7</color>
+    <color name="map_cyan_4">#cc08e7e7</color>
+    <color name="map_cyan_3">#aa08e7e7</color>
+    <color name="map_cyan_2">#7708e7e7</color>
+    <color name="map_cyan_1">#5508e7e7</color>
+    <color name="purple">#800080</color>
+
+    <color name="slider_dark_red">#ff3e3e</color>
+    <color name="slider_light_red">#c70000</color>
+    <color name="slider_light_green">#3ab259</color>
+    <color name="deep_green">#007a5e</color>
+    <color name="slider_dark_green">#53ff80</color>
+    <color name="dimtransparent">#aa000000</color>
+
+    <color name="login_pin1">#C73D58</color>
+    <color name="login_pink2">#BE1E3E</color>
+    <color name="exit_pink">#c90031</color>
+
 </resources>
