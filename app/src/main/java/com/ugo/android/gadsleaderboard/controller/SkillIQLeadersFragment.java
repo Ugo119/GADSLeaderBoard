@@ -14,17 +14,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ugo.android.gadsleaderboard.R;
-import com.ugo.android.gadsleaderboard.adapter.LearningLeadersDisplayAdapter;
 import com.ugo.android.gadsleaderboard.adapter.SkillIQLeadersDisplayAdapter;
-import com.ugo.android.gadsleaderboard.model.learningleaders.LearningLeaders;
-import com.ugo.android.gadsleaderboard.model.learningleaders.LearningLeadersResponseModel;
 import com.ugo.android.gadsleaderboard.model.skilliq.SkillIQLeaders;
-import com.ugo.android.gadsleaderboard.model.skilliq.SkillIQLeadersResponseModel;
 import com.ugo.android.gadsleaderboard.network.LeaderboardApiService;
 import com.ugo.android.gadsleaderboard.network.RetrofitFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -48,16 +43,6 @@ public class SkillIQLeadersFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(
                 new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
-//        ArrayList<SkillIQLeaders> skillIQLeadersList = new ArrayList<>();
-//        skillIQLeadersList.add(new SkillIQLeaders(R.drawable.learningleader, "Peter Obi", "22 hours read", "Nigeria"));
-//        skillIQLeadersList.add(new SkillIQLeaders(R.drawable.learningleader, "John Ngige", "22 hours read", "Nigeria"));
-//        skillIQLeadersList.add(new SkillIQLeaders(R.drawable.learningleader, "Ahmadu Ali", "22 hours read", "Nigeria"));
-//        skillIQLeadersList.add(new SkillIQLeaders(R.drawable.learningleader, "Ade Bisi", "22 hours read", "Nigeria"));
-//        skillIQLeadersList.add(new SkillIQLeaders(R.drawable.learningleader, "Sean John", "22 hours read", "UK"));
-//        skillIQLeadersList.add(new SkillIQLeaders(R.drawable.learningleader, "Stella Ngozi", "22 hours read", "China"));
-//        skillIQLeadersDisplayAdapter = new SkillIQLeadersDisplayAdapter(getActivity(), skillIQLeadersList);
-//
-//        recyclerView.setAdapter(skillIQLeadersDisplayAdapter);
 
         connectAndGetApiData();
 
@@ -68,7 +53,6 @@ public class SkillIQLeadersFragment extends Fragment {
         retrofit = RetrofitFactory.getRetrofit();
 
         LeaderboardApiService leaderboardApiService = retrofit.create(LeaderboardApiService.class);
-        //Call<MovieResponse> call = movieApiService.getTopRatedMovies(API_KEY);
 
         Call<List<SkillIQLeaders>> call = leaderboardApiService.getSkillIqLeaders();
 
@@ -80,11 +64,7 @@ public class SkillIQLeadersFragment extends Fragment {
                     final SkillIQLeadersDisplayAdapter adapter = new SkillIQLeadersDisplayAdapter(getActivity(), skillIQLeaders);
                     recyclerView.setAdapter(adapter);
                     adapter.notifyDataSetChanged();
-
                 }
-
-
-
             }
 
             @Override
@@ -92,17 +72,12 @@ public class SkillIQLeadersFragment extends Fragment {
                 if (t instanceof IOException) {
                     Toast.makeText(getContext(), "this is an actual network failure " +
                             ":( inform the user and possibly retry", Toast.LENGTH_SHORT).show();
-                    // logging probably not necessary
+
                 } else {
                     Toast.makeText(getContext(), "conversion issue! big problems :(",
                             Toast.LENGTH_SHORT).show();
                 }
-
             }
-
-
         });
-
-
     }
 }

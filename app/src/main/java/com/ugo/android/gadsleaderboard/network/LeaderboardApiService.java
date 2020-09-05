@@ -2,9 +2,7 @@ package com.ugo.android.gadsleaderboard.network;
 
 import com.ugo.android.gadsleaderboard.model.SubmissionResponseModel;
 import com.ugo.android.gadsleaderboard.model.learningleaders.LearningLeaders;
-import com.ugo.android.gadsleaderboard.model.learningleaders.LearningLeadersResponseModel;
 import com.ugo.android.gadsleaderboard.model.skilliq.SkillIQLeaders;
-import com.ugo.android.gadsleaderboard.model.skilliq.SkillIQLeadersResponseModel;
 
 import java.util.List;
 
@@ -13,7 +11,6 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
-import retrofit2.http.Query;
 
 public interface LeaderboardApiService {
     @GET("/api/hours")

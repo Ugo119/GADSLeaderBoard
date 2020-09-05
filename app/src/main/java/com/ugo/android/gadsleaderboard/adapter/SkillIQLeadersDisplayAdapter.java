@@ -27,7 +27,6 @@ public class SkillIQLeadersDisplayAdapter extends RecyclerView.Adapter<SkillIQLe
 
     public SkillIQLeadersDisplayAdapter(Activity context, List<SkillIQLeaders> skillIQLeadersList) {
         this.skillIQLeadersList = skillIQLeadersList;
-        //super(context, 0, learningLeaders);
     }
     public static class SkillIQViewHolder extends RecyclerView.ViewHolder {
         public String achievementBadge;
@@ -59,9 +58,7 @@ public class SkillIQLeadersDisplayAdapter extends RecyclerView.Adapter<SkillIQLe
 
         final View view = inflater.inflate(R.layout.skill_leader_layout,parent, false);
 
-
         return new SkillIQLeadersDisplayAdapter.SkillIQViewHolder(view);
-
     }
 
     @Override

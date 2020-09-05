@@ -9,7 +9,6 @@ import com.ugo.android.gadsleaderboard.R;
 import com.ugo.android.gadsleaderboard.controller.LearningLeadersFragment;
 
 public class LearningLeadersActivity extends SingleFragmentActivity {
-
     @Override
     protected Fragment createFragment() {return new LearningLeadersFragment();}
 }
