@@ -4,9 +4,10 @@
 
     <item
         android:id="@+id/submit"
-
         app:showAsAction="ifRoom|withText"
+        
         android:title="Submit">
     </item>
+
 
 </menu>

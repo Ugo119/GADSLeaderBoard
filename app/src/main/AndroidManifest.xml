@@ -27,6 +27,13 @@
         <activity android:name=".activity.SkillIQLeadersActivity">
 
         </activity>
+        <activity android:name=".activity.SubmitActivity"
+            android:parentActivityName=".activity.GadsHomeActivity" >
+
+
+        </activity>
+
+
     </application>
 
 </manifest>

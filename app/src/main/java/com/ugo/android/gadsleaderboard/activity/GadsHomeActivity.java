@@ -5,20 +5,28 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.ugo.android.gadsleaderboard.R;
 import com.ugo.android.gadsleaderboard.adapter.LeadersAdapter;
+import com.ugo.android.gadsleaderboard.controller.SubmitFragment;
 
 public class GadsHomeActivity extends AppCompatActivity {
     private ViewPager mViewPager;
-    LeadersAdapter leadersAdapter;
-    FragmentManager fragmentManager;
+    private LeadersAdapter leadersAdapter;
+    private FragmentManager fragmentManager;
+    private FragmentTransaction transaction;
+    private SubmitFragment submitFragment;
+    private ImageView menuSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +56,16 @@ public class GadsHomeActivity extends AppCompatActivity {
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
         setSupportActionBar(toolbar);
+
+        menuSubmit = findViewById(R.id.btn_submit);
+        menuSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(GadsHomeActivity.this, SubmitActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     // Menu icons are inflated just as they were with actionbar
@@ -63,7 +81,7 @@ public class GadsHomeActivity extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.submit:
-                fragmentManager = getSupportFragmentManager();
+
 
 
                 return true;
