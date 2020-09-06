@@ -20,6 +20,7 @@ public class GadsHomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gads_pager);
         leadersAdapter = new LeadersAdapter(this, getSupportFragmentManager());

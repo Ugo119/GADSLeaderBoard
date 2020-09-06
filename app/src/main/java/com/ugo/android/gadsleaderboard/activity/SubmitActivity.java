@@ -66,12 +66,23 @@ public class SubmitActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 launchConfirmSubmitPopup(SubmitActivity.this);
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 
     public void launchConfirmSubmitPopup(Activity activity) {
